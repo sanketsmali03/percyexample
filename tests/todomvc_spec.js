@@ -74,6 +74,6 @@ describe('TodoMVC', function () {
     itemsLeft = await page.evaluate(() => document.querySelector('.todo-count').textContent);
     expect(itemsLeft).toEqual('0 items left');
 
-    await percySnapshot(page, this.test.fullTitle(), { widths: [768, 992, 1200] });
+    await percySnapshot(page, this.test.fullTitle(), { widths: [768, 992, 1200,2160] });
   });
 });
